@@ -6,48 +6,54 @@
 
 <ion-content class="ion-padding">
   <ion-card class="image-row">
-   
+    
     <div>
       <ion-row>
-        <div class="img">
+        <div>
           <ion-card>
-            <img alt="Silhouette of mountains" width="200" height="200"
+            <img alt="Silhouette of mountains" width="100" height="100"
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWHyQiUHVzieTmfWBufrQ-0rje1StgFvFaAg&s" />
             <ion-card-header>
-              <ion-card-title style="color:rgb(180, 189, 132);">Ahri</ion-card-title>
+              <ion-card-title style="color: rgb(180, 189, 132); font-size: 12px;">Ahri</ion-card-title>
             </ion-card-header>
           </ion-card>
         </div>
-        <div class="img">
+        <div>
           <ion-card>
-            <img alt="Silhouette of mountains" width="200" height="200"
+            <img alt="Silhouette of mountains" width="100" height="100"
               src="https://ruined.dev/_next/image/?url=https%3A%2F%2Fddragon.leagueoflegends.com%2Fcdn%2Fimg%2Fchampion%2Ftiles%2FLux_0.jpg&w=640&q=75" />
             <ion-card-header>
-              <ion-card-title style="color:rgb(180, 189, 132);">Lux</ion-card-title>
+              <ion-card-title style="color: rgb(180, 189, 132); font-size: 12px;">Lux</ion-card-title>
             </ion-card-header>
           </ion-card>
         </div>
-        <div class="img">
+        <div>
           <ion-card >
-            <img alt="Silhouette of mountains" width="200" height="200"
+            <img alt="Silhouette of mountains" width="100" height="100"
               src="https://i1.sndcdn.com/artworks-000057083081-tu2xsw-t500x500.jpg" />
             <ion-card-header>
-              <ion-card-title style="color:rgb(180, 189, 132);">Garen</ion-card-title>
+              <ion-card-title style="color: rgb(180, 189, 132); font-size: 12px;">Garen</ion-card-title>
             </ion-card-header>
           </ion-card>
         </div>
+        <div>
         <ion-card>
-          <img alt="Silhouette of mountains" width="200" height="200"
+          <img alt="Silhouette of mountains" width="100" height="100"
             src="https://ionicframework.com/docs/img/demos/card-media.png" />
+            
           <ion-card-header>
-            <ion-card-title style="color:rgb(180, 189, 132);">Proximamente</ion-card-title>
+            <ion-card-title style="color: rgb(180, 189, 132); font-size: 12px;">proximamente</ion-card-title>
           </ion-card-header>
+        
         </ion-card>
+      </div>
+      
       </ion-row>
     </div>
 
 
   </ion-card>
+  <ion-button *ngIf="obtenerAdministrador()" expand="block" routerLink="/crear-campeon">Ingresar campeon</ion-button>
 
 
 </ion-content>
